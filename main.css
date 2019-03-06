@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-width: 750px;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./wall.jpg) no-repeat;
+  background-size: cover;
+}
+.allRowWrapper {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+.rowWrapper:nth-child(2) {
+  padding-left: 1.8rem;
+}
+.rowWrapper:nth-child(3) {
+  padding-left: 1.5rem;
+}
+.rowWrapper kbd:nth-child(1) {
+  margin-left: 0;
+}
+.rowWrapper {
+  margin-bottom: 1.25rem;
+}
+kbd {
+  color: #C5C5C5;
+  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Frutiger,Helvetica,sans-serif;
+  font-size: 1rem;
+  border: 1px solid #373737;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 3.4rem;
+  height: 3.4rem;
+  text-transform: uppercase;
+  margin-left: 1rem;
+  background: linear-gradient(to bottom, #292929 0%,#111111 100%);
+  box-shadow: 0 0 0 1px #1A1B1C, 0 0 0 2px #1F2020, 0 3px 0 2px #080808;
+  position: relative;
+}
+kbd .editButton {
+  border: none;
+  font-size: 0.7rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-radius: 6px;
+  background-color: rgb(255, 165, 0);
+  padding: 3px 4px;
+  position: absolute;
+  right: 1px;
+  bottom: 0;
+  cursor: pointer;
+  display: none;
+}
+.rowWrapper kbd:hover .editButton {
+  display: inline-block;
+}
