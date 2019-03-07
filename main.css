@@ -23,7 +23,7 @@ main {
   padding-left: 1.8rem;
 }
 .rowWrapper:nth-child(3) {
-  padding-left: 1.5rem;
+  padding-left: 0.8rem;
 }
 .rowWrapper kbd:nth-child(1) {
   margin-left: 0;
